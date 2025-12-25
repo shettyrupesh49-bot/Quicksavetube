@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZenLoad | Fast YouTube Downloader</title>
     <meta name="description" content="Download YouTube Videos and Shorts in one click. Free, fast, and secure.">
     
@@ -13,16 +13,16 @@
             --card-bg: #181b21;
             --text-main: #ffffff;
             --text-muted: #8b9bb4;
-            --accent: #3b82f6; /* Blue */
+            --accent:  #3b82f6; /* Blue */
             --accent-hover: #2563eb;
             --success: #10b981;
             --error: #ef4444;
-            --border: #2d3342;
+            --border:  #2d3342;
             --radius: 12px;
-            --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --font:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; outline: none; -webkit-tap-highlight-color: transparent; }
+        * { box-sizing: border-box; margin: 0; padding: 0; outline: none; -webkit-tap-highlight-color:  transparent; }
         
         body {
             background-color: var(--bg-color);
@@ -44,14 +44,14 @@
         }
 
         h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
-        .logo-accent { color: var(--accent); }
-        p.subtitle { color: var(--text-muted); font-size: 15px; margin-bottom: 30px; }
+        . logo-accent { color: var(--accent); }
+        p. subtitle { color: var(--text-muted); font-size: 15px; margin-bottom: 30px; }
 
         /* INPUT FIELD */
-        .input-group {
+        . input-group {
             position: relative;
             margin-bottom: 20px;
-            background: var(--card-bg);
+            background:  var(--card-bg);
             border-radius: var(--radius);
             padding: 4px;
             border: 1px solid var(--border);
@@ -76,7 +76,7 @@
             width: 100%;
             background: var(--accent);
             color: white;
-            border: none;
+            border:  none;
             padding: 16px;
             font-size: 16px;
             font-weight: 600;
@@ -89,31 +89,32 @@
             gap: 10px;
         }
 
-        .btn-main:active { transform: scale(0.98); }
+        . btn-main:active { transform: scale(0.98); }
         .btn-main:disabled { background: var(--border); color: var(--text-muted); cursor: not-allowed; }
 
         /* STATUS & ANIMATIONS */
         .status-msg {
             margin-top: 15px;
-            font-size: 14px;
+            font-size:  14px;
             min-height: 20px;
             font-weight: 500;
             opacity: 0;
-            transition: opacity 0.3s;
+            transition:  opacity 0.3s;
         }
         .show-status { opacity: 1; }
         .error { color: var(--error); }
         .success { color: var(--success); }
 
-        .spinner {
+        . spinner {
             width: 20px;
             height: 20px;
             border: 3px solid rgba(255,255,255,0.3);
             border-radius: 50%;
             border-top-color: #fff;
             animation: spin 1s linear infinite;
-            display: none;
         }
+        
+        . spinner. hidden { display: none; }
         
         @keyframes spin { to { transform: rotate(360deg); } }
 
@@ -142,15 +143,15 @@
             width: 80px;
             height: 60px;
             background: #000;
-            border-radius: 6px;
+            border-radius:  6px;
             object-fit: cover;
         }
 
         .meta { display: flex; flex-direction: column; justify-content: center; }
-        .video-title { font-size: 14px; font-weight: 600; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .video-title { font-size: 14px; font-weight: 600; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:  vertical; overflow: hidden; }
         .video-duration { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
 
-        .download-options { padding: 10px; }
+        . download-options { padding: 10px; }
         
         .option-row {
             display: flex;
@@ -158,7 +159,7 @@
             align-items: center;
             padding: 12px;
             border-radius: 8px;
-            margin-bottom: 5px;
+            margin-bottom:  5px;
             background: rgba(255,255,255,0.03);
         }
 
@@ -166,21 +167,24 @@
         .fmt-quality { font-size: 14px; font-weight: 700; color: var(--text-main); }
         .fmt-size { font-size: 12px; color: var(--text-muted); }
 
-        .btn-dl {
+        . btn-dl {
             background: var(--success);
             color: #fff;
             text-decoration: none;
             padding: 8px 16px;
             border-radius: 6px;
-            font-size: 13px;
-            font-weight: 600;
+            font-size:  13px;
+            font-weight:  600;
             transition: opacity 0.2s;
+            cursor: pointer;
+            border: none;
+            display: inline-block;
         }
         .btn-dl:hover { opacity: 0.9; }
 
         /* FOOTER & DISCLAIMER */
-        .footer {
-            margin-top: auto;
+        . footer {
+            margin-top:  auto;
             padding: 30px 20px;
             text-align: center;
             border-top: 1px solid var(--border);
@@ -190,12 +194,12 @@
         
         .disclaimer { font-size: 11px; color: #4a5568; line-height: 1.5; max-width: 600px; margin: 0 auto; }
         
-        .monetize-link {
+        . monetize-link {
             display: inline-block;
             margin-top: 15px;
             color: var(--accent);
             font-size: 13px;
-            text-decoration: none;
+            text-decoration:  none;
             border-bottom: 1px dotted var(--accent);
         }
 
@@ -227,19 +231,19 @@
             <div class="video-info">
                 <img id="thumbImg" class="thumbnail" src="" alt="Thumbnail">
                 <div class="meta">
-                    <div id="vidTitle" class="video-title">...</div>
+                    <div id="vidTitle" class="video-title">... </div>
                     <div id="vidDuration" class="video-duration">...</div>
                 </div>
             </div>
             <div id="downloadList" class="download-options">
-                </div>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="disclaimer">
             <strong>Legal Disclaimer:</strong> This tool is for personal and educational use only. 
-            Do not download copyrighted material without permission. We do not host any files. 
+            Do not download copyrighted material without permission. We do not host any files.  
             Users are solely responsible for their actions.
             <br><br>
             <a href="#" class="monetize-link" onclick="alert('This would link to BuyMeACoffee or a VPN affiliate.')">Support Development</a>
@@ -248,14 +252,14 @@
 
     <script>
         // === CORE CONFIGURATION ===
-        // We use public Invidious instances to fetch metadata without a backend.
-        // This is the "Zero Budget" secret.
+        // We use public Invidious instances to fetch metadata without a backend. 
+        // This is the "Zero Budget" secret. 
         const INSTANCES = [
             'https://invidious.jing.rocks',
             'https://vid.puffyan.us',
             'https://inv.tux.pizza',
             'https://invidious.nerdvpn.de',
-            'https://invidious.drgns.space'
+            'https://invidious. drgns.space'
         ];
 
         let currentInstanceIndex = 0;
@@ -269,51 +273,99 @@
         const resultCard = document.getElementById('resultCard');
         const downloadList = document.getElementById('downloadList');
 
-        // === LOGIC ===
+        // === UTILITY FUNCTIONS ===
 
         function updateStatus(msg, type = 'neutral') {
             statusMsg.textContent = msg;
             statusMsg.className = 'status-msg show-status ' + type;
         }
 
+        /**
+         * Extract YouTube video ID from various URL formats: 
+         * - Standard:  youtube.com/watch?v=ID
+         * - Short: youtu.be/ID
+         * - Embed: youtube.com/embed/ID
+         * - Shorts: youtube.com/shorts/ID
+         * - Mobile: m.youtube.com/watch?v=ID
+         */
         function extractVideoID(url) {
-            const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+            if (! url || typeof url !== 'string') return false;
+            
+            // Matches:  youtu.be/ID, /shorts/ID, /embed/ID, /v/ID, watch?v=ID, watch?... &v=ID
+            const regExp = /(? :youtu\.be\/|\/shorts\/|\/embed\/|\/v\/|watch\?(? :[^&]*&)*v=)([a-zA-Z0-9_-]{11})/;
             const match = url.match(regExp);
-            return (match && match[7].length == 11) ? match[7] : false;
+            
+            return (match && match[1]) ? match[1] : false;
         }
 
-        function secondsToTime(d) {
-            d = Number(d);
-            const h = Math.floor(d / 3600);
-            const m = Math.floor(d % 3600 / 60);
-            const s = Math.floor(d % 3600 % 60);
-            const hDisplay = h > 0 ? h + ":" : "";
-            const mDisplay = m > 0 ? (m < 10 && h > 0 ? "0" : "") + m + ":" : m + ":";
-            const sDisplay = s < 10 ? "0" + s : s;
-            return hDisplay + mDisplay + sDisplay;
+        /**
+         * Convert seconds to HH:MM:SS or MM:SS format
+         */
+        function secondsToTime(seconds) {
+            if (!seconds || isNaN(seconds)) return '0:00';
+            
+            seconds = Math.floor(Number(seconds));
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+
+            const padZero = (num) => (num < 10 ? '0' : '') + num;
+            
+            if (hours > 0) {
+                return `${hours}:${padZero(minutes)}:${padZero(secs)}`;
+            }
+            return `${minutes}:${padZero(secs)}`;
         }
 
+        /**
+         * Fetch video metadata with retry logic across multiple Invidious instances
+         */
         async function fetchWithRetry(videoId) {
-            // Try instances in round-robin fashion
+            const errors = [];
+            
+            // Try each instance in round-robin fashion
             for (let i = 0; i < INSTANCES.length; i++) {
                 const instance = INSTANCES[currentInstanceIndex];
                 const apiUrl = `${instance}/api/v1/videos/${videoId}`;
                 
-                console.log(`Trying ${instance}...`);
+                console.log(`Attempting to fetch from:  ${instance}`);
                 
                 try {
-                    const response = await fetch(apiUrl);
-                    if (!response.ok) throw new Error('Network response was not ok');
+                    const response = await fetch(apiUrl, {
+                        method: 'GET',
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+                    
                     const data = await response.json();
-                    return data; // Success
+                    if (! data || typeof data !== 'object') {
+                        throw new Error('Invalid response format');
+                    }
+                    
+                    console.log('Successfully fetched from:', instance);
+                    return data;
+                    
                 } catch (error) {
-                    console.warn(`Failed ${instance}, switching...`);
-                    currentInstanceIndex = (currentInstanceIndex + 1) % INSTANCES.length; // Rotate
+                    const errorMsg = `${instance}:  ${error.message}`;
+                    console.warn(errorMsg);
+                    errors.push(errorMsg);
+                    
+                    // Rotate to next instance
+                    currentInstanceIndex = (currentInstanceIndex + 1) % INSTANCES.length;
                 }
             }
-            throw new Error('All instances failed. Please try again later.');
+            
+            // All instances failed
+            const allErrors = errors.join(' | ');
+            throw new Error(`All instances failed.  [${allErrors}]`);
         }
 
+        /**
+         * Main video processing function
+         */
         async function processVideo() {
             const url = urlInput.value.trim();
             const videoId = extractVideoID(url);
@@ -321,99 +373,168 @@
             // Reset UI
             resultCard.style.display = 'none';
             downloadList.innerHTML = '';
+            statusMsg.className = 'status-msg';
             
             if (!videoId) {
-                updateStatus('Invalid YouTube URL', 'error');
+                updateStatus('Invalid YouTube URL.  Please check and try again.', 'error');
                 return;
             }
 
             // Start Loading
             fetchBtn.disabled = true;
             btnText.style.display = 'none';
-            spinner.style.display = 'block';
-            updateStatus('Connecting to secure server...', 'neutral');
+            spinner.classList.remove('hidden');
+            updateStatus('Connecting to secure server... ', 'neutral');
 
             try {
                 const data = await fetchWithRetry(videoId);
                 renderResult(data);
                 updateStatus('Ready to download', 'success');
             } catch (err) {
-                updateStatus('Failed to fetch video. Try again.', 'error');
-                console.error(err);
+                console.error('Processing error:', err);
+                updateStatus('Failed to fetch video. Please try again later.', 'error');
             } finally {
-                fetchBtn.disabled = false;
+                fetchBtn. disabled = false;
                 btnText.style.display = 'block';
-                spinner.style.display = 'none';
+                spinner.classList.add('hidden');
             }
         }
 
+        /**
+         * Render video metadata and download options
+         * Safely handles malformed or missing data from API
+         */
         function renderResult(data) {
-            // Populate Meta
-            document.getElementById('thumbImg').src = data.videoThumbnails.find(t => t.quality === 'medium').url || data.videoThumbnails[0].url;
-            document.getElementById('vidTitle').textContent = data.title;
-            document.getElementById('vidDuration').textContent = secondsToTime(data.lengthSeconds);
+            try {
+                // === VALIDATE RESPONSE ===
+                if (! data || typeof data !== 'object') {
+                    throw new Error('Invalid API response format');
+                }
 
-            // Filter Formats (We want MP4s with Audio, or just Audio)
-            // Invidious API returns 'formatStreams' (combined) and 'adaptiveFormats' (video/audio only)
-            
-            let options = [];
+                // === POPULATE THUMBNAIL ===
+                const thumbnails = Array.isArray(data.videoThumbnails) ?  data.videoThumbnails :  [];
+                let thumbUrl = '';
+                
+                if (thumbnails.length > 0) {
+                    const mediumThumb = thumbnails. find(t => t && t.quality === 'medium');
+                    thumbUrl = (mediumThumb && mediumThumb.url) || (thumbnails[0] && thumbnails[0].url) || '';
+                }
+                
+                document.getElementById('thumbImg').src = thumbUrl;
+                document.getElementById('thumbImg').alt = data.title || 'Video thumbnail';
 
-            // 1. Look for Combined Formats (Easiest for direct download)
-            data.formatStreams.forEach(fmt => {
-                if (fmt.container === 'mp4') {
+                // === POPULATE TITLE & DURATION ===
+                document.getElementById('vidTitle').textContent = data.title || 'Unknown Title';
+                document.getElementById('vidDuration').textContent = secondsToTime(data.lengthSeconds || 0);
+
+                // === COLLECT DOWNLOAD OPTIONS ===
+                const options = [];
+
+                // 1. Format Streams (Combined video + audio in one file)
+                const formatStreams = Array.isArray(data.formatStreams) ? data.formatStreams : [];
+                formatStreams.forEach(fmt => {
+                    if (fmt && fmt.container === 'mp4' && fmt.url) {
+                        const resolution = fmt.resolution || 'Unknown';
+                        const qualityValue = parseInt(fmt.resolution) || 0;
+                        
+                        options.push({
+                            label: resolution,
+                            type: 'Video + Audio',
+                            size: fmt.size || 'Unknown',
+                            url: fmt.url,
+                            qualityVal: qualityValue
+                        });
+                    }
+                });
+
+                // 2. Adaptive Formats (Audio only - MP4A/M4A)
+                const adaptiveFormats = Array.isArray(data.adaptiveFormats) ? data.adaptiveFormats : [];
+                const audioFormat = adaptiveFormats.find(f => 
+                    f && f.type && typeof f.type === 'string' && f.type.includes('audio') && f.url
+                );
+                
+                if (audioFormat) {
                     options.push({
-                        label: fmt.resolution || 'Unknown',
-                        type: 'Video + Audio',
-                        size: fmt.size || '?',
-                        url: fmt.url,
-                        qualityVal: parseInt(fmt.resolution) || 0
+                        label: 'Audio Only',
+                        type:  'M4A (Best Quality)',
+                        size: audioFormat.size || 'Unknown',
+                        url: audioFormat. url,
+                        qualityVal: -1
                     });
                 }
-            });
 
-            // 2. Look for Audio Only (MP3/M4A)
-            const audio = data.adaptiveFormats.find(f => f.type.includes('audio/mp4'));
-            if (audio) {
-                options.push({
-                    label: 'Audio Only',
-                    type: 'M4A/MP3',
-                    size: audio.size || '?',
-                    url: audio.url,
-                    qualityVal: -1
-                });
-            }
+                // === SORT BY QUALITY (High to Low) ===
+                options.sort((a, b) => b.qualityVal - a. qualityVal);
 
-            // Sort by quality (High to Low)
-            options.sort((a, b) => b.qualityVal - a.qualityVal);
-
-            // Generate HTML
-            if (options.length === 0) {
-                downloadList.innerHTML = '<div style="padding:10px; text-align:center;">No direct download links found.</div>';
-            } else {
-                options.forEach(opt => {
-                    const html = `
-                        <div class="option-row">
-                            <div class="fmt-info">
-                                <span class="fmt-quality">${opt.label}</span>
-                                <span class="fmt-size">${opt.type}</span>
-                            </div>
-                            <a href="${opt.url}" target="_blank" class="btn-dl" download>Download</a>
+                // === RENDER OPTIONS ===
+                if (options.length === 0) {
+                    downloadList.innerHTML = `
+                        <div style="padding: 15px; text-align: center; color: var(--text-muted);">
+                            <p>No direct download links available for this video.</p>
+                            <p style="font-size: 12px; margin-top: 8px;">This may be due to regional restrictions or API limitations.</p>
                         </div>
                     `;
-                    downloadList.innerHTML += html;
-                });
-            }
+                } else {
+                    let html = '';
+                    options.forEach(opt => {
+                        html += `
+                            <div class="option-row">
+                                <div class="fmt-info">
+                                    <span class="fmt-quality">${escapeHTML(opt.label)}</span>
+                                    <span class="fmt-size">${escapeHTML(opt.type)} • ${escapeHTML(String(opt.size))}</span>
+                                </div>
+                                <a href="${escapeHTML(opt.url)}" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="btn-dl" 
+                                   onclick="return downloadFile(event, '${escapeHTML(opt. label)}')">
+                                   Download
+                                </a>
+                            </div>
+                        `;
+                    });
+                    downloadList.innerHTML = html;
+                }
 
-            resultCard.style.display = 'block';
+                resultCard.style.display = 'block';
+
+            } catch (error) {
+                console.error('Error rendering result:', error);
+                updateStatus('Error displaying video info. Response format may be unsupported. ', 'error');
+                resultCard.style.display = 'none';
+            }
         }
 
-        // Auto-paste detection (UX enhancement)
-        urlInput.addEventListener('paste', () => {
-            setTimeout(() => {
-                if(extractVideoID(urlInput.value)) processVideo();
-            }, 100);
-        });
+        /**
+         * Escape HTML to prevent XSS
+         */
+        function escapeHTML(text) {
+            if (! text) return '';
+            const map = {
+                '&': '&amp;',
+                '<':  '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return String(text).replace(/[&<>"']/g, m => map[m]);
+        }
 
-    </script>
-</body>
-</html>
+        /**
+         * Handle download link clicks
+         * Provides feedback on download initiation
+         */
+        function downloadFile(event, quality) {
+            console.log(`Initiating download:  ${quality}`);
+            // Allow the link to proceed naturally (opens in new tab via target="_blank")
+            // In browsers, cross-origin file downloads may open a tab instead of saving
+            return true;
+        }
+
+        // === EVENT LISTENERS ===
+
+        /**
+         * Auto-process when user pastes a YouTube URL
+         */
+        urlInput.addEventListener('paste', () => {
+            setTi            
